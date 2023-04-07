@@ -5,6 +5,9 @@ TLS in a pod that otherwise does not support it. Simply run this container
 next to the existing container, match up the ports, and your app is
 TLS-passthrough ready.
 
+This sidecar is intended to be light weight. In testing, it runs in about 8Mi of
+RAM and consumes less than 13Mi of disk space for each instance of it.
+
 # Steps to deploy
 
 ## Create a TLS key/cert pair
